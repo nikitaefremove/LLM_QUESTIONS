@@ -127,24 +127,114 @@ In summary, in-context learning enables LLMs to leverage patterns and examples w
 
 ### 1.11 Explain type of prompt engineering
 
+Prompt engineering involves designing and optimizing input prompts to guide the behavior of large language models (LLMs). Here are the main types:
+
+1. **Zero-Shot Prompting**: The model generates a response without any prior examples, relying solely on the input prompt. Example: "Translate this English sentence to French: 'Hello, how are you?'"
+
+2. **Few-Shot Prompting**: The model is given a few examples in the prompt to guide its response. Example: "Translate English to French: 'Hello' -> 'Bonjour', 'Goodbye' -> 'Au revoir'. Now translate: 'How are you?'"
+
+3. **Chain-of-Thought (CoT) Prompting**: Encourages the model to break down complex tasks into intermediate steps. Example: "Q: If Alice has 3 apples and Bob gives her 2 more, how many does she have? A: Alice starts with 3 apples. Bob gives her 2 more. 3 + 2 = 5. So, Alice has 5 apples."
+
+4. **Instruction-Based Prompting**: Directly instructs the model to perform a specific task. Example: "Summarize the following text in one sentence: [text]"
+
+5. **Role-Playing Prompting**: Assigns a role to the model to shape its responses. Example: "You are a helpful assistant. Explain quantum computing in simple terms."
+
+6. **Template-Based Prompting**: Uses structured templates to guide the model's output. Example: "Fill in the blanks: The capital of France is ____."
+
+7. **Meta-Prompting**: Prompts the model to generate or refine its own prompts. Example: "Create a prompt that would help a student understand the concept of recursion."
+
+Each type serves different use cases and can be combined for better performance.
+
 ---
 
 ### 1.12 What are some of the aspect to keep in mind while using few-shots prompting?
+
+When using few-shot prompting, consider the following aspects:
+
+1. **Relevance**: Ensure the examples provided are highly relevant to the task. Irrelevant examples can mislead the model.
+
+2. **Diversity**: Include diverse examples to cover a range of scenarios, helping the model generalize better.
+
+3. **Clarity**: Make sure the examples are clear and unambiguous. Ambiguity can lead to incorrect outputs.
+
+4. **Consistency**: Use consistent formatting and structure across examples to help the model understand the pattern.
+
+5. **Task Alignment**: Align the examples with the specific task or domain. Misalignment can reduce the model's effectiveness.
+
+6. **Brevity**: Keep examples concise. Overly verbose examples can dilute the model's focus.
+
+7. **Order**: The order of examples can influence the model's output. Place the most representative examples first.
+
+8. **Context**: Provide sufficient context in the examples to guide the model, especially for complex tasks.
+
+9. **Bias**: Be aware of potential biases in the examples, as the model may amplify them in its responses.
+
+10. **Evaluation**: Continuously evaluate the model's performance and refine the examples as needed to improve accuracy.
 
 ---
 
 ### 1.13 What are certain strategies to write good prompt?
 
+1. **Be Clear and Specific**: Clearly define the task and provide specific instructions to guide the model. Avoid ambiguity.
+
+2. **Use Examples**: Include examples (few-shot learning) to demonstrate the desired output format or style.
+
+3. **Iterate and Refine**: Test and refine prompts based on the model's responses to improve accuracy and relevance.
+
+4. **Control Length**: Specify the desired length of the response (e.g., "in one sentence" or "in 100 words") to avoid overly verbose or too brief answers.
+
+5. **Leverage Context**: Provide relevant context or background information to help the model generate more accurate responses.
+
+6. **Use Constraints**: Apply constraints (e.g., "list three reasons" or "use formal language") to guide the model's output.
+
+7. **Break Down Complex Tasks**: Divide complex tasks into smaller, manageable sub-tasks with separate prompts if needed.
+
+8. **Experiment with Formats**: Try different prompt formats (e.g., questions, commands, or fill-in-the-blank) to see what works best.
+
+9. **Avoid Bias**: Be mindful of potential biases in the prompt that could influence the model's output.
+
+10. **Use System Messages**: For conversational models, use system messages to set the tone or role (e.g., "You are a helpful assistant").
+
 ---
 
 ### 1.14 What is hallucination, and how can it be controlled using prompt engineering?
+
+Hallucination in LLMs refers to the generation of incorrect, nonsensical, or fabricated information that is not grounded in the input data or reality. To control hallucination using prompt engineering:
+
+1. **Explicit Instructions**: Provide clear, detailed instructions to guide the model's output, such as "Answer based on verified facts only."
+2. **Contextual Constraints**: Include specific context or constraints in the prompt to limit the scope of the response.
+3. **Iterative Refinement**: Use iterative prompting to refine the output, correcting errors in subsequent prompts.
+4. **Source Anchoring**: Reference specific sources or data in the prompt to ensure the model grounds its response in factual information.
+5. **Temperature Adjustment**: Lower the temperature parameter to reduce randomness and encourage more deterministic, fact-based responses.
 
 ---
 
 ### 1.15 How to improve the reasoning ability of LLM through prompt engineering?
 
+To improve LLM reasoning through prompt engineering:  
+
+1. **Chain-of-Thought (CoT):** *Guide step-by-step reasoning instead of asking for direct answers.*  
+2. **Few-Shot CoT:** *Provide examples before posing a new question.*  
+3. **Explicit Thinking Instruction:** *Use "Let's think step by step."*  
+4. **Self-Consistency:** *Generate multiple answers and pick the most consistent one.*  
+5. **Ask for Explanations:** *Request reasoning before the final answer.*  
+6. **Role-Playing:** *Frame the model as an expert (e.g., "You are a mathematician").*  
+7. **Scratchpad Method:** *Encourage writing intermediate steps.*  
+8. **Decomposition:** *Break problems into smaller subtasks.*  
+9. **Analogies:** *Link problems to familiar concepts.*  
+10. **Self-Reflection:** *Ask the model to review and refine its response.*
+
 ---
 
-### 1.16 How to improve LLM reasoning if your COT prompt fails?
+### 1.16 How to improve LLM reasoning if your COT prompt fails? 
+
+1. **Self-Consistency:** Generate multiple answers, pick the most frequent.  
+2. **Refine Prompt:** Make instructions clearer, more structured.  
+3. **Stepwise Decomposition:** Break the task into smaller steps.  
+4. **Self-Reflection:** Ask the model to verify and refine its answer.  
+5. **Alternative Methods:** Try **Tree-of-Thought (ToT)** or **Scratchpad.**  
+6. **Examples & Analogies:** Relate to familiar concepts.  
+7. **Adjust Temperature:** Lower for logic, higher for creativity.  
+8. **External Validation:** Cross-check with another model or tool.  
 
 ---

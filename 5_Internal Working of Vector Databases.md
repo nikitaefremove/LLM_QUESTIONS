@@ -4,6 +4,23 @@
 
 # 5. Internal Working of Vector Databases
 
+## Table of Contents
+
+- [5.1 What is a vector database?](#51-what-is-a-vector-database)
+- [5.2 How does a vector database differ from traditional databases?](#52-how-does-a-vector-database-differ-from-traditional-databases)
+- [5.3 How does a vector database work?](#53-how-does-a-vector-database-work)
+- [5.4 Explain difference between vector index, vector DB & vector plugins?](#54-explain-difference-between-vector-index-vector-db--vector-plugins)
+- [5.5 You are working on a project that involves a small dataset of customer reviews. Your task is to find similar reviews in the dataset. The priority is to achieve perfect accuracy in finding the most similar reviews, and the speed of the search is not a primary concern. Which search strategy would you choose and why?](#55-you-are-working-on-a-project-that-involves-a-small-dataset-of-customer-reviews-your-task-is-to-find-similar-reviews-in-the-dataset-the-priority-is-to-achieve-perfect-accuracy-in-finding-the-most-similar-reviews-and-the-speed-of-the-search-is-not-a-primary-concern-which-search-strategy-would-you-choose-and-why)
+- [5.6 Explain vector search strategies like clustering and Locality-Sensitive Hashing.](#56-explain-vector-search-strategies-like-clustering-and-locality-sensitive-hashing)
+- [5.7 How does clustering reduce search space? When does it fail and how can we mitigate these failures?](#57-how-does-clustering-reduce-search-space-when-does-it-fail-and-how-can-we-mitigate-these-failures)
+- [5.8 Explain Random projection index?](#58-explain-random-projection-index)
+- [5.9 Explain Locality-sensitive hashing (LSH) indexing method?](#59-explain-locality-sensitive-hashing-lsh-indexing-method)
+- [5.10 Explain product quantization (PQ) indexing method?](#510-explain-product-quantization-pq-indexing-method)
+- [5.11 Compare different Vector index and given a scenario, which vector index you would use for a project?](#511-compare-different-vector-index-and-given-a-scenario-which-vector-index-you-would-use-for-a-project)
+- [5.12 How would you decide ideal search similarity metrics for the use case?](#512-how-would-you-decide-ideal-search-similarity-metrics-for-the-use-case)
+- [5.13 Explain different types and challenges associated with filtering in vector DB?](#513-explain-different-types-and-challenges-associated-with-filtering-in-vector-db)
+- [5.14 How to decide the best vector database for your needs?](#514-how-to-decide-the-best-vector-database-for-your-needs)
+
 ---
 
 ### 5.1 What is a vector database?

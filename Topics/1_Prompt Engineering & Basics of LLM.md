@@ -4,6 +4,28 @@
 
 # 1. Prompt Engineering & Basics of LLM
 
+## Table of Contents
+
+-[1.1 What is the difference between Predictive/Discriminative AI and Generative AI?](#11-what-is-the-difference-between-predictivediscriminative-ai-and-generative-ai)  
+-[1.2 What is LLM, and how are LLMs trained?](#12-what-is-llm-and-how-are-llms-trained)  
+-[1.3 What is a token in the language model?](#13-what-is-a-token-in-the-language-model)  
+-[1.4 How to estimate the cost of running SaaS-based and Open Source LLM models?
+](#14-how-to-estimate-the-cost-of-running-saas-based-and-open-source-llm-models)  
+-[1.5 Explain the Temperature parameter and how to set it](#15-explain-the-temperature-parameter-and-how-to-set-it)  
+-[1.6 What are different decoding strategies for picking output tokens?](#16-what-are-different-decoding-strategies-for-picking-output-tokens)  
+-[1.7 What are different ways you can define stopping criteria in large language model?](#17-what-are-different-ways-you-can-define-stopping-criteria-in-large-language-model)  
+-[1.8 How to use stop sequences in LLMs?](#18-how-to-use-stop-sequences-in-llms)  
+-[1.9 Explain the basic structure prompt engineering](#19-explain-the-basic-structure-prompt-engineering)  
+-[1.10 Explain in-context learning](#110-explain-in-context-learning)  
+-[1.11 Explain type of prompt engineering](#111-explain-type-of-prompt-engineering)  
+-[1.12 What are some of the aspect to keep in mind while using few-shots prompting?](#112-what-are-some-of-the-aspect-to-keep-in-mind-while-using-few-shots-prompting)  
+-[1.13 What are certain strategies to write good prompt?](#113-what-are-certain-strategies-to-write-good-prompt)  
+-[1.14 What is hallucination, and how can it be controlled using prompt engineering?](#114-what-is-hallucination-and-how-can-it-be-controlled-using-prompt-engineering)  
+-[1.15 How to improve the reasoning ability of LLM through prompt engineering?](#115-how-to-improve-the-reasoning-ability-of-llm-through-prompt-engineering)  
+-[1.16 How to improve LLM reasoning if your COT prompt fails?](#116-how-to-improve-llm-reasoning-if-your-cot-prompt-fails)  
+
+---
+
 ### 1.1 What is the difference between Predictive/Discriminative AI and Generative AI?
 
 Predictive/Discriminative AI focuses on learning the boundary between classes or predicting outcomes based on input data. It models the conditional probability ( P(Y|X) ), where ( Y ) is the target variable and ( X ) is the input. Examples include classification and regression tasks.
@@ -226,7 +248,7 @@ To improve LLM reasoning through prompt engineering:
 
 ---
 
-### 1.16 How to improve LLM reasoning if your COT prompt fails? 
+### 1.16 How to improve LLM reasoning if your COT prompt fails?
 
 1. **Self-Consistency:** Generate multiple answers, pick the most frequent.  
 2. **Refine Prompt:** Make instructions clearer, more structured.  

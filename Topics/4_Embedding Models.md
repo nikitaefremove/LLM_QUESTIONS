@@ -4,6 +4,15 @@
 
 # 4. Embedding Models
 
+## Table of Contents
+
+- [4.1 What are vector embeddings, and what is an embedding model? before need to save](#41-what-are-vector-embeddings-and-what-is-an-embedding-model)
+- [4.2 How is an embedding model used in the context of LLM applications? before need to save](#42-how-is-an-embedding-model-used-in-the-context-of-llm-applications)
+- [4.3 What is the difference between embedding short and long content? before need to save](#43-what-is-the-difference-between-embedding-short-and-long-content)
+- [4.4 How to benchmark embedding models on your data? before need to save](#44-how-to-benchmark-embedding-models-on-your-data)
+- [4.5 Suppose you are working with an open AI embedding model, after benchmarking accuracy is coming low, how would you further improve the accuracy of embedding the search model? before need to save](#45-suppose-you-are-working-with-an-open-ai-embedding-model-after-benchmarking-accuracy-is-coming-low-how-would-you-further-improve-the-accuracy-of-embedding-the-search-model)
+- [4.6 Walk me through steps of improving sentence transformer model used for embedding? before need to save](#46-walk-me-through-steps-of-improving-sentence-transformer-model-used-for-embedding)
+
 ---
 
 ### 4.1  What are vector embeddings, and what is an embedding model?

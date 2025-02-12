@@ -4,6 +4,16 @@
 
 # 2. Retrieval Augmented Generation (RAG)
 
+## Table of Contents
+
+-[2.1 How to increase accuracy, and reliability & make answers verifiable in LLM?](#21-how-to-increase-accuracy-and-reliability--make-answers-verifiable-in-llm)  
+-[2.2 How does RAG work?](#22-how-does-rag-work)  
+-[2.3 What are some benefits of using the RAG system?](#23-what-are-some-benefits-of-using-the-rag-system)  
+-[2.4 When should I use Fine-tuning instead of RAG?](#24-when-should-i-use-fine-tuning-instead-of-rag)  
+-[2.5 What are the architecture patterns for customizing LLM with proprietary data?](#25-what-are-the-architecture-patterns-for-customizing-llm-with-proprietary-data)  
+
+---
+
 ### 2.1 How to increase accuracy, and reliability & make answers verifiable in LLM?
 
 To increase accuracy, reliability, and make answers verifiable in LLMs:

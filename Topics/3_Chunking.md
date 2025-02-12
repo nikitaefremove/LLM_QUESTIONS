@@ -4,6 +4,15 @@
 
 # 3. Chunking
 
+## Table of Contents
+
+-[3.1 What is chunking, and why do we chunk our data?](#31-what-is-chunking-and-why-do-we-chunk-our-data)  
+-[3.2 What factors influence chunk size?](#32-what-factors-influence-chunk-size)  
+-[3.3 What are the different types of chunking methods?](#33-what-are-the-different-types-of-chunking-methods)  
+-[3.4 How to find the ideal chunk size?](#34-how-to-find-the-ideal-chunk-size)  
+
+---
+
 ### 3.1 What is chunking, and why do we chunk our data?
 
 Chunking refers to the process of breaking down large datasets or text into smaller, more manageable pieces or "chunks." In the context of Large Language Models (LLMs), chunking is often used to handle long sequences of text that exceed the model's maximum input length.

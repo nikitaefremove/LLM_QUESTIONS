@@ -2,29 +2,29 @@
 
 ---
 
-# 10. Evaluation of LLM System
+# 8. Supervised Fine-Tuning of LLM
 
 ## Table of Contents
 
-- [10.1 What is fine-tuning, and why is it needed?](#101-what-is-fine-tuning-and-why-is-it-needed)
-- [10.2 Which scenario do we need to fine-tune LLM?](#102-which-scenario-do-we-need-to-fine-tune-llm)
-- [10.3 How to make the decision of fine-tuning?](#103-how-to-make-the-decision-of-fine-tuning)
-- [10.4 How do you improve the model to answer only if there is sufficient context for doing so?](#104-how-do-you-improve-the-model-to-answer-only-if-there-is-sufficient-context-for-doing-so)
-- [10.5 How to create fine-tuning datasets for Q&A?](#105-how-to-create-fine-tuning-datasets-for-qa)
-- [10.6 How to set hyperparameters for fine-tuning?](#106-how-to-set-hyperparameters-for-fine-tuning)
-- [10.7 How to estimate infrastructure requirements for fine-tuning LLM?](#107-how-to-estimate-infrastructure-requirements-for-fine-tuning-llm)
-- [10.8 How do you fine-tune LLM on consumer hardware?](#108-how-do-you-fine-tune-llm-on-consumer-hardware)
-- [10.9 What are the different categories of the PEFT method?](#109-what-are-the-different-categories-of-the-peft-method)
-- [10.10 What is catastrophic forgetting in LLMs?](#1010-what-is-catastrophic-forgetting-in-llms)
-- [10.11 What are different re-parameterized methods for fine-tuning?](#1011-what-are-different-re-parameterized-methods-for-fine-tuning)
+- [8.1 What is fine-tuning, and why is it needed?](#81-what-is-fine-tuning-and-why-is-it-needed)
+- [8.2 Which scenario do we need to fine-tune LLM?](#82-which-scenario-do-we-need-to-fine-tune-llm)
+- [8.3 How to make the decision of fine-tuning?](#83-how-to-make-the-decision-of-fine-tuning)
+- [8.4 How do you improve the model to answer only if there is sufficient context for doing so?](#84-how-do-you-improve-the-model-to-answer-only-if-there-is-sufficient-context-for-doing-so)
+- [8.5 How to create fine-tuning datasets for Q&A?](#85-how-to-create-fine-tuning-datasets-for-qa)
+- [8.6 How to set hyperparameters for fine-tuning?](#86-how-to-set-hyperparameters-for-fine-tuning)
+- [8.7 How to estimate infrastructure requirements for fine-tuning LLM?](#87-how-to-estimate-infrastructure-requirements-for-fine-tuning-llm)
+- [8.8 How do you fine-tune LLM on consumer hardware?](#88-how-do-you-fine-tune-llm-on-consumer-hardware)
+- [8.9 What are the different categories of the PEFT method?](#89-what-are-the-different-categories-of-the-peft-method)
+- [8.8 What is catastrophic forgetting in LLMs?](#88-what-is-catastrophic-forgetting-in-llms)
+- [8.11 What are different re-parameterized methods for fine-tuning?](#811-what-are-different-re-parameterized-methods-for-fine-tuning)
 
-### 10.1 What is fine-tuning, and why is it needed?
+### 8.1 What is fine-tuning, and why is it needed?
 
 Fine-tuning is the process of adapting a pre-trained large language model (LLM) to a specific task or domain by further training it on a smaller, task-specific dataset. It is needed because pre-trained models, while general-purpose, may not perform optimally on specialized tasks without additional training. Fine-tuning allows the model to learn task-specific patterns, improving performance on the target task while leveraging the general knowledge acquired during pre-training.
 
 ---
 
-### 10.2 Which scenario do we need to fine-tune LLM?
+### 8.2 Which scenario do we need to fine-tune LLM?
 
 Fine-tuning an LLM is necessary in scenarios where the pre-trained model needs to be adapted to a specific task or domain. Common scenarios include:
 
@@ -38,7 +38,7 @@ Fine-tuning allows the model to leverage its pre-trained knowledge while adaptin
 
 ---
 
-### 10.3 How to make the decision of fine-tuning?
+### 8.3 How to make the decision of fine-tuning?
 
 To decide whether to fine-tune a large language model (LLM), consider the following factors:
 
@@ -60,7 +60,7 @@ If these factors align, fine-tuning is likely a good choice. Otherwise, explore 
 
 ---
 
-### 10.4 How do you improve the model to answer only if there is sufficient context for doing so?
+### 8.4 How do you improve the model to answer only if there is sufficient context for doing so?
 
 1. **Confidence Thresholding**: Set a confidence threshold for the model's predictions. If the model's confidence score for a response is below the threshold, it should abstain from answering or request more context.
 
@@ -76,7 +76,7 @@ If these factors align, fine-tuning is likely a good choice. Otherwise, explore 
 
 ---
 
-### 10.5 How to create fine-tuning datasets for Q&A?
+### 8.5 How to create fine-tuning datasets for Q&A?
 
 To create fine-tuning datasets for Q&A:
 
@@ -107,7 +107,7 @@ To create fine-tuning datasets for Q&A:
 
 ---
 
-### 10.6 How to set hyperparameters for fine-tuning?
+### 8.6 How to set hyperparameters for fine-tuning?
 
 To set hyperparameters for fine-tuning, follow these steps:
 
@@ -117,7 +117,7 @@ To set hyperparameters for fine-tuning, follow these steps:
 
 3. **Number of Epochs**: Fine-tuning typically requires fewer epochs (e.g., 3-5) since the model is already pre-trained. Monitor for overfitting.
 
-4. **Warm-up Steps**: Gradually increase the learning rate during the first few epochs to prevent training instability. Set 10-20% of total training steps.
+4. **Warm-up Steps**: Gradually increase the learning rate during the first few epochs to prevent training instability. Set 8-20% of total training steps.
 
 5. **Weight Decay**: Apply a small weight decay (e.g., 0.01) to avoid overfitting during fine-tuning.
 
@@ -133,7 +133,7 @@ Experimentation is crucial—use grid search or Bayesian optimization for tuning
 
 ---
 
-### 10.7 How to estimate infrastructure requirements for fine-tuning LLM?
+### 8.7 How to estimate infrastructure requirements for fine-tuning LLM?
 
 To estimate infrastructure requirements for fine-tuning a Large Language Model (LLM), consider the following factors:
 
@@ -152,7 +152,7 @@ To estimate infrastructure requirements for fine-tuning a Large Language Model (
    - Fine-tuning may require several hours to days. Estimate based on the number of epochs, batch size, and computational resources available.
 
 5. **Compute Power (GPUs/TPUs)**:
-   - Use high-memory GPUs (e.g., A100, V100, or TPUs) for faster training.
+   - Use high-memory GPUs (e.g., A80, V80, or TPUs) for faster training.
    - Estimate the required number of GPUs or TPUs based on batch size and model size. Distributed training may be needed for larger models.
 
 6. **Storage**:
@@ -171,7 +171,7 @@ By considering these factors, you can estimate the required resources and plan y
 
 ---
 
-### 10.8 How do you fine-tune LLM on consumer hardware?
+### 8.8 How do you fine-tune LLM on consumer hardware?
 
 Fine-tuning large language models (LLMs) on consumer hardware involves several strategies to manage resource constraints:
 
@@ -193,7 +193,7 @@ Fine-tuning large language models (LLMs) on consumer hardware involves several s
 
 ---
 
-### 10.9 What are the different categories of the PEFT method?
+### 8.9 What are the different categories of the PEFT method?
 
 The Parameter-Efficient Fine-Tuning (PEFT) methods can be categorized into several approaches designed to reduce the number of trainable parameters while still achieving effective fine-tuning. The main categories are:
 
@@ -218,13 +218,13 @@ These methods aim to achieve efficient fine-tuning without the overhead of retra
 
 ---
 
-### 10.10 What is catastrophic forgetting in LLMs?
+### 8.10 What is catastrophic forgetting in LLMs?
 
 Catastrophic forgetting in LLMs refers to the phenomenon where a model loses previously learned information when it is trained on new data. This occurs because the model's parameters are updated to optimize for the new task, causing it to "forget" the knowledge it had acquired from earlier tasks. This is particularly problematic in continual learning scenarios where the model needs to retain and build upon past knowledge.
 
 ---
 
-### 10.11 What are different re-parameterized methods for fine-tuning?
+### 8.11 What are different re-parameterized methods for fine-tuning?
 
 Re-parameterized methods for fine-tuning large language models (LLMs) aim to adapt pre-trained models to specific tasks with fewer parameters or computational resources. Key methods include:
 

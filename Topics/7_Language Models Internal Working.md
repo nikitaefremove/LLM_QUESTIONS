@@ -2,7 +2,7 @@
 
 ---
 
-# 6. Language Models Internal Working
+# 7. Language Models Internal Working
 
 ## Table of Contents
 

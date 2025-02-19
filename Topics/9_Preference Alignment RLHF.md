@@ -6,10 +6,10 @@
 
 ## Table of Contents
 
-[9.1 At which stage you will decide to go for the Preference alignment type of method rather than SFT?](#91-at-which-stage-you-will-decide-to-go-for-the-preference-alignment-type-of-method-rather-than-sft)  
-[9.2 What is RLHF, and how is it used?](#92-what-is-rlhf-and-how-is-it-used)  
-[9.3 What is the reward hacking issue in RLHF?](#93-what-is-the-reward-hacking-issue-in-rlhf)  
-[9.4 Explain different preference alignment methods.](#94-explain-different-preference-alignment-methods)
+- [9.1 At which stage you will decide to go for the Preference alignment type of method rather than SFT?](#91-at-which-stage-you-will-decide-to-go-for-the-preference-alignment-type-of-method-rather-than-sft)  
+- [9.2 What is RLHF, and how is it used?](#92-what-is-rlhf-and-how-is-it-used)  
+- [9.3 What is the reward hacking issue in RLHF?](#93-what-is-the-reward-hacking-issue-in-rlhf)  
+- [9.4 Explain different preference alignment methods.](#94-explain-different-preference-alignment-methods)
 
 ---
 
